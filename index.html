@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trabajo de Alura</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="logoA">
+        <img src="Imagenes del challenge/Logo.png" alt="Logo de Alura" />
+        <h1 class="title">Encriptador de texto</h1>
+      </div>
+      <div class="ingreso-texto">
+        <textarea
+          name="panel1"
+          id="texto1"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+      </div>
+      <div class="salida-texto">
+        <img
+          id="munieco"
+          src="Imagenes del challenge/Muñeco.png"
+          alt="Muñeco que busca"
+        />
+        <p id="mensajeNoencontrado">Ningún mensaje fue encontrado</p>
+        <textarea name="panel2" id="texto2" cols="30" rows="10" readonly>
+Ingrese el texto que desees encriptar o desencriptar</textarea
+        >
+        <button id="btn-copiar" onclick="copiar()">Copiar</button>
+      </div>
+      <div class="info">
+        <img src="Imagenes del challenge/Vector.png" alt="img de vector" />
+        <p>Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="desencriptar()">
+          Desencriptar
+        </button>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

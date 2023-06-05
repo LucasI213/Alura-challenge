@@ -1,0 +1,263 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    height: 1024px;
+    padding: auto;
+    border-radius: 0px;
+}
+
+.logoA {
+    padding: 2%;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+/* parte de la escritura de texto */
+
+.ingreso-texto {
+    float: left;
+    width: 55%;
+    height: 50%;
+}
+
+#texto1 {
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: #0a3871;
+    font-size: 25px;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+/* parte de la escritura de texto */
+
+/* parte donde se muestra el texto */
+.salida-texto {
+    float: right;
+    width: 35%;
+    height: 70%;
+    border-radius: 20px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 50px 100px -40px #B695C0
+    ;
+}
+
+#mensajeNoencontrado {
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 5%;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
+}
+
+
+
+#munieco {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+}
+
+#texto2 {
+    float: left;
+    margin-left: 10%;
+    color: #0A3871;
+    width: 80%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+#btn-copiar {
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    border-width: 1px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    display: none;
+    transition: 1s all;
+}
+
+#btn-copiar:hover {
+    background-color: #0f5ebe;
+    color: white;
+    cursor: pointer;
+}
+
+/* parte donde se muestra el texto */
+
+.info {
+    float: left;
+    width: 55%;
+    height: 10%;
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.info img {
+    margin-right: 10px; 
+}
+
+.info p {
+    font-family: 'Inter', sans-serif;
+}
+
+/* botones izquierdos */
+.botones {
+    float: left;
+    width: 55%;
+    height: auto;
+    border-radius: 24px;
+    
+}
+
+.btn-encriptar {
+    color: #ffffff;
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 15%;
+    border-width: 1px;
+    background-color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    transition: 1s all;
+}
+
+.btn-encriptar:hover {
+    color: black;
+    background-color: #a9bad1;
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 10%;
+    border-width: 1px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    transition: 1s all;
+}
+
+.btn-desencriptar:hover {
+    color: white;
+    background-color: #0f5ebe;
+    cursor: pointer;
+}
+/* fin botones izquierdos */
+
+/* Media query de tablet */
+
+@media screen and (max-width:1080px) {
+    #munieco{
+      display: none;
+    }
+}
+
+@media screen and (max-width:870px){
+    .ingreso-texto, 
+    #texto1,
+    .salida-texto,
+    #mensajeNoencontrado,
+    #texto2,
+    .info,
+    .botones  {
+     float: none;
+    }
+
+    .ingreso-texto {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10%;
+    }
+
+    #texto1 {
+        margin: 5%;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #texto2 {
+        width: auto;
+        border-radius: 7%;
+    }
+
+    .info {
+        width: auto;
+    }
+
+    .salida-texto {
+        width: auto;
+        height: auto;
+    }
+    #mensajeNoencontrado {
+margin: auto;    }
+
+    #texto2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .botones {
+        width: 100%;
+    }
+
+    #btn-copiar {
+        margin: auto;
+    }
+}
+@media screen and (max-width:375px){ 
+
+    .btn-encriptar {
+        margin: 0%;
+        width: 100%;
+    }
+
+    .btn-desencriptar{
+        margin: 0%;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
