@@ -247,7 +247,7 @@ margin: auto;    }
         margin: auto;
     }
 }
-@media screen and (max-width:375px){ 
+@media screen and (max-width:475px){ 
 
     .btn-encriptar {
         margin: 0%;
